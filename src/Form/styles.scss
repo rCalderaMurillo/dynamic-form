@@ -1,0 +1,16 @@
+.form-container {
+    & {
+        background-color: white;
+        padding: 30px;
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-fields,
+    .form-fields-added {
+        flex: 1;
+    }
+
+}

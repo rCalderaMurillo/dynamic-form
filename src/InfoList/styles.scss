@@ -1,0 +1,38 @@
+.list-info-container {
+    & {
+        background-color: white;
+        width: 300px;
+        height: 500px;
+    }
+
+    .list-info-header {
+        & {
+            background: #4076D5;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        h2 {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+
+    ul {
+        list-style: decimal
+    }
+}
