@@ -9,13 +9,13 @@ function AppUI() {
     <div className="container">
       <Header/>
       <ElementsContext.Consumer>
-        {({deleteElement})=>(
+        {({deleteElement,elements})=>(
           <main>
             <section className="form-info-list">
                 <InfoList/>
             </section>
             <section className="form-section">
-              <Form/>
+              <Form elements={elements}/>
             </section>
           </main>
         )}

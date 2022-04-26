@@ -16,10 +16,18 @@ function ElemetsProvider(props) {
     newElements.splice(elementIndex, 1);
     saveElement(newElements);
   };
+
+  const addElement = (element) =>{
+    const newElements = [...elements];
+    newElements.push(element);
+    saveElement(newElements);
+  }
   
   return (
     <ElementsContext.Provider value={{
-      deleteElement
+      deleteElement,
+      elements,
+      addElement
     }}>
       {props.children}
     </ElementsContext.Provider>
